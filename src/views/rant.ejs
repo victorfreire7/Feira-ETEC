@@ -3,27 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Infonet</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/pag-si.css">
+    <style>
+        footer{
+            margin-top: 0;
+        }
+        main{
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <H1>GERADOR DE HASH</H1>
-    <form action="" method="post">
+    <header>
+        <img src="../img/Infonet.png" alt="Infonet_title">
+        <a href="/"></a>
+    </header>
+    <main>
+        <section class="container1">
+            <p class="title">Introdução</p>
+            <p class="title">Conceitos básicos sobre cyber segurança</p>
+            <div class="container-topicos">
+                <div class="topicos" id="#topicos">
+                    <p>Tópico 1</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat doloremque, tempora natus quam culpa dignissimos similique itaque sint reprehenderit animi quos in, iusto, ex nisi aliquam pariatur libero atque.</p>
+                </div>
+                <div class="topicos">
+                    <p>Tópico 2</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat doloremque, tempora natus quam culpa dignissimos similique itaque sint reprehenderit animi quos in, iusto, ex nisi aliquam pariatur libero atque.</p>
+                </div>
+                <div class="topicos">
+                    <p>Tópico 3 </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat doloremque, tempora natus quam culpa dignissimos similique itaque sint reprehenderit animi quos in, iusto, ex nisi aliquam pariatur libero atque.</p>
+                </div>
+                <div class="topicos">
+                    <p>Tópico 4</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat doloremque, tempora natus quam culpa dignissimos similique itaque sint reprehenderit animi quos in, iusto, ex nisi aliquam pariatur libero atque.</p>
+                </div>
+            </div>
+        </section>
+        <div class="hr"></div>
+        
+        <section class="container2" id="protecao">
+            <p>Como se <br><span style="color: #571088;">proteger?</span></p>
+            <section>
+                <div class="container-dicas">
+                    <div class="dicas">
+                        <img src="../img/cerebro.svg" alt="">
+                        <div class="texto-dicas">
+                            <p>Responsabilidade Virtual</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur laoreet dolor</p>
+                        </div>
+                    </div>
+                    <div class="dicas">
+                        <img src="../img/escudo.svg" alt="">
+                        <div class="texto-dicas">
+                            <p>Softwares e Atualizações</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur laoreet dolor</p>
+                        </div>
+                    </div>
+                    <div class="dicas">
+                        <img src="../img/mundo-cadeado.svg" alt="">
+                        <div class="texto-dicas">
+                            <p>Passes confiáveis</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur laoreet dolor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gatito">
+                    <img src="../img/gatito.png" alt="gatito">
+                </div>
+            </section>
+        </section>
+        <div class="hr"></div>
 
-        <input type="text" name="inp" id="inp" placeholder="Digite um texto para ser criptografado..." size="30">
-        <button>Enviar</button>
+        <section class="container3" id="hash">
+            <div class="hash-title">
+                <p>Hash</p>
+                <p>Tipos e Práticas</p>
+            </div>
 
-    </form>
-    <br><br>
-    <%if(bcrypt){%>
-        <h1>BCRYPTJS:</h1>
-        <p><%-bcrypt%></p>
+            <div class="container-hash-tips">
+                <div class="hashs-tip">
+                    <p>BYCRIPT</p>
+                    <p>Um algoritmo de senha usado para armazenar e verificar senhas de forma segura, conhecido por ser um método criptográfico robusto e adaptativo, resistente a ataques de força bruta.</p>
+                </div>
+                <div class="hashs-tip">
+                    <p>SHA-1</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                
+            </div>
 
+            <div class="container-gerar-hash">
+                <p>Gerador de Hash</p>
+                <section class="input-hash">
+
+                    <form action="" method="post">
+
+                        <input class="hash" id="input_hash" type="text" name="nome"  placeholder="Digite um texto para ser criptografado..." size="30">
+                        <button class="send-hash-btn">Enviar</button>
+                
+                    </form>
+
+                    <!-- <input class="hash" id="input_hash" type="text" placeholder="Digite um texto para ser criptografado">
+                    <button onclick="tabela_hash()" class="send-hash-btn">Enviar</button> -->
+                </section>
+            </div>
+
+            <div class="container-tabela-hash">
+                <div class="tabela" id="tabela-resul-hash">
+
+                    <div class="linha">
+                        <%if(valor){%>
+                        <div class="item">Sua string</div>
+                        <div class="conteudo" id="pala_digit" style="color: #7b1abc;"><%-valor%></div>
+                        <%}%>
+                    </div>
+
+                    <div class="linha">
+                        <%if(bcrypt){%>
+                        <div class="item">Bycrypt Hash</div>
+                        <div class="conteudo" id="bycript-hash-div"><%-bcrypt%></div>
+                        <%}%>
+                    </div>
+                    <div class="linha" style="border: none;">
+                        <%if(sha1){%>
+                        <div class="item">SHA1 Hash</div>
+                        <div class="conteudo" id="sha-1-hash-div"><%-sha1%></div>
+                        <%}%>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer>
+        © Copyright 2025 Terceiro Infonet | Todos os direitos reservados
+    </footer>
+
+    <%if(scrollTo){%>
+        <script>
+            window.scrollTo(0, 2400)
+        </script>
     <%}%>
-        <br><br>
-    <%if(sha1){%>
-        <h1>SHA1:</h1>
 
-        <p><%-sha1%></p>
-    <%}%>
+    <script src="../js/script.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@ const db = require('./src/db'); // 127.0.0.1 ???
 const app = express();
 const PORT = 3005;
 
+app.use(express.static('public')); //seto o diretorio inicial das páginas EJS como 'public', assim posso executar o 'js/main.js' mais facilmente.
 app.use(express.urlencoded({ extended: true }));
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
@@ -25,4 +26,4 @@ app.on('conectado', () => {
     app.listen(PORT, () => {
         console.log(`http://localhost:${PORT}`);
     })
-})
+});

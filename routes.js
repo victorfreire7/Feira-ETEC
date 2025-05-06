@@ -9,7 +9,7 @@ const routes = express.Router();
 routes.get("/", client.main);
 routes.post("/", client.create)
 
-routes.get("/rant", rant.main );
+routes.get("/rant", rant.main);
 routes.post("/rant", rant.geraHash);
 
 routes.get("/games", (req, res) => {

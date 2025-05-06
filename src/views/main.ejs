@@ -1,43 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Infonet</title>
 </head>
 <body>
+    <header>
+        <img src="img/Infonet.png" alt="Infonet_title">
+        <a href="/"></a>
+    </header>
+
+    <section class="login" style="display: none;">
+        <div class="close" onclick="closeab()">X</div>
+        <div class="formu">
+            <div class="text"> <p> Cadastre-se para jogar </p></div>
+            <form action="" method="post">
+                <div class="inp1 inp">
+                    <p>Nome</p>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome:">
+                </div>
+                <div class="inp1 inp">
+                    <p>Turma</p>
+                    <select name="turma" id="turma">
+                        <option value="0">Selecionar Turma...</option>
+                        <option value="info1">1º Infonet</option>
+                        <option value="info2">2º Infonet</option>
+                        <option value="info3">3º Infonet</option>
+            
+                        <option value="mkt1">1º Marketing</option>
+                        <option value="mkt2">2º Marketing</option>
+                        <option value="mkt3">3º Marketing</option>
+            
+                        <option value="rh1">1º Recursos Humanos</option>
+                        <option value="rh2">2º Recursos Humanos</option>
+                        <option value="rh3">3º Recursos Humanos</option>
+            
+                        <option value="el1">1º Eletrônica</option>
+                        <option value="el2">2º Eletrônica</option>
+                        <option value="el3">3º Eletrônica</option>
+                    </select>
+                </div>
+                <div class="btn">
+                    <button>Próximo</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg"></div>
+    </section>
 
 
-        <h1>Olá, Faça cadastro!</h1>
-        <form method="post">
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome:">
-            <select name="turma" id="turma">
-                <option value="info1">1º Infonet</option>
-                <option value="info2">2º Infonet</option>
-                <option value="info3">3º Infonet</option>
-    
-                <option value="mkt1">1º Marketing</option>
-                <option value="mkt2">2º Marketing</option>
-                <option value="mkt3">3º Marketing</option>
-    
-                <option value="rh1">1º Recursos Humanos</option>
-                <option value="rh2">2º Recursos Humanos</option>
-                <option value="rh3">3º Recursos Humanos</option>
-    
-                <option value="el1">1º Eletrônica</option>
-                <option value="el2">2º Eletrônica</option>
-                <option value="el3">3º Eletrônica</option>
-            </select>
-            <button>CADASTRA</button>
+    <main>
+        <section class="container1">
+            <div>
+            <p>CYBER<br> <span style="color:#571088;">SEGURANÇA</span> </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="img/cadeado.svg" alt="">
+            </div>
+        </section>
+
+        <!-- <a href="/rant"></a> -->
+        <!-- <a href="/rant"> -->
+
+        <section class="container-caixas">
+            <div class="caixa">
+                <p>Introdução: <br> Conceitos</p>
+                <div class="hr"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, non ducimus dolore ipsum vitae officia, alias saepe architecto impedit nam, aut dolores illo eos excepturi aperiam. Recusandae maxime quos labore.</p>
+                <span id="sybom-plus">+</span>
+            </div>
+            <div class="caixa" >
+                <p>Hash na <br> Prática</p>
+                <div class="hr"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, non ducimus dolore ipsum vitae officia, alias saepe architecto impedit nam, aut dolores illo eos excepturi aperiam. Recusandae maxime quos labore.</p>
+                <span id="sybom-plus">+</span>
+            </div>
+            <div class="caixa" >
+                <p>Como se <br> Proteger?</p>
+                <div class="hr"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, non ducimus dolore ipsum vitae officia, alias saepe architecto impedit nam, aut dolores illo eos excepturi aperiam. Recusandae maxime quos labore.</p>
+                <span id="sybom-plus">+</span>
+            </div>
+        </section>
+        <div class="section-for-btn">
+            
+        <form action="/rant" method="get">
+            <button class="sab-mas" >Saiba Mais</button>
         </form>
+    </div>
+    <!-- </a> -->
+    
+    <div class="line"></div>
 
-        <h1>O que voce deseja?</h1>
-        <form action="games" method="get"><button>GAMES</button></form>
-        <br>
-        <form action="rant" method="get"><button>SEGUNDA PÁGINA</button></form>
+    <section class="container3">
+        <div class="title">
+            <p>Jogos</p>
+            <br>
+            <p>Segurança da Informação</p>
+        </div>
+        <div class="container-carrosel">
+            <div class="carrosel" id="carrosel">
+                <!-- <div class="jogo">
+                    <div class="conteudo">
+                        <p>Gato fofo</p>
+                        <div class="hr2"></div>
+                        <p>Sobre:</p>
+                    </div>
+                    <p class="fora-contet">miau miau miau miau miau miau miau miau miua caralhooooooo</p>
+                </div> -->
+            </div>
+        </div>
+
+        <button class="cad-play-btn" onclick="abrir_login()">Cadastre-se para jogar</button>
         
-        <script src="/public/js/main.js"></script>
- 
+    </section>
 
+     
+    </main>
+    <footer>
+        © Copyright 2025 Terceiro Infonet | Todos os direitos reservados
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+      const carrossel = document.getElementById('carrosel');
+    
+      // Duplicar os itens para criar o loop
+      carrossel.innerHTML += carrossel.innerHTML;
+    
+      let posX = 0;
+      const speed = 2; // Ajuste: menor = mais lento
+    
+      function loop() {
+        posX -= speed;
+        if (Math.abs(posX) >= carrossel.scrollWidth / 2) {
+          posX = 0; // Reinicia quando chegar na metade
+        }
+        carrossel.style.transform = `translateX(${posX}px)`;
+        requestAnimationFrame(loop);
+      }
+    
+      loop();
+    });
+    
+        </script>
 </body>
+
 </html>

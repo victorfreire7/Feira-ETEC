@@ -1,0 +1,357 @@
+@import url(index.css);
+
+
+main,section, section div,.section-for-btn,footer, .jogo{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    flex-direction: column;
+}
+
+
+
+main{
+    width: 100vw;
+    height: auto;
+}
+
+main section.container1{
+    width: 90vw;
+    height: 90vh;
+    color: var(--branco);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10vh;
+}
+main section.container1 div{
+    width: 50vw;
+    height: 100%;
+}
+main section.container1 div:nth-child(1){
+    flex-direction: column;
+    align-items: flex-start;
+}
+main section.container1 div:nth-child(1) p:nth-child(1){
+   font-size: 4em;
+   margin-bottom: 5vh;
+}
+main section.container1 div:nth-child(1) p:nth-child(2){
+    font-size: 1.1em;
+    width: 40vw;
+    
+}
+/* main section.container1 div:nth-child(2){
+} */
+
+
+main section.container1 div img{
+    object-fit: cover;
+    width:90vh;
+    height: 90vh;
+    object-position: center;
+    overflow-x: 10;
+    animation: flutuar ease-in-out infinite 2s ;
+}
+.container-caixas{
+    width: 95vw;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.container-caixas .caixa{
+    width: 25vw;
+    height: 100%;
+    background-color: var(--roxo-claro);
+    border: 2px solid;
+    border-radius: 10px;
+
+    transition: .2s linear;
+    display:  flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+
+    cursor:pointer;
+
+    position: relative;
+}
+
+.container-caixas .caixa:hover{
+    
+    background-color: var(--preto);
+
+    transition: .3s linear;
+    border-color:var(--roxo-claro);
+    color: var(--roxo-claro);
+    transform: translateY(-8px);
+}
+div.hr:hover{
+    transition: .3s linear;
+    background-color: var(--roxo-claro);
+}
+.container-caixas .caixa p:nth-child(1){
+    font-size: 2.5em;
+    text-align: left;
+    width: 100%;
+    height: auto;
+
+}
+.container-caixas .caixa div.hr{
+    width: 40%;
+    height: 3px;
+    background-color: var(--preto);
+    
+    transition: .2s linear;
+}
+
+.container-caixas .caixa:hover div.hr{
+    background-color: var(--roxo-claro);
+    transition: .3s linear;
+}
+.container-caixas .caixa p:nth-child(3){
+    text-align: left;
+    font-size: 1.2em;
+    width: 90%;
+}
+span#sybom-plus{
+    position: absolute;
+    right: 15px;
+    top: 2px;
+    color: var(--preto);
+    font-size: 3em;
+    
+    transition: .2s linear;
+}
+.container-caixas .caixa:hover #sybom-plus{
+    color: var(--roxo-claro);
+    
+    transition: .3s linear;
+}
+.section-for-btn{
+    margin-top: 10vh;
+    width: 100vw;
+    height: auto;
+}
+.sab-mas{
+    background-color: var(--preto);
+    color: var(--branco);
+    border: 5px solid var(--roxo-claro);
+    border-radius: 8px;
+    width: 20vw;
+    height: 10vh;
+
+    font-size: 1.7em;
+
+    font-family: 'Comfortaa', sans-serif;
+    transition: .2s linear;
+    color: var(--branco);
+}
+.sab-mas:hover{
+    color: var(--preto);
+    background-color: var(--roxo-claro);
+    transform: translateY(-5px);
+    transition: .3s linear;
+    box-shadow: 1px 1px 29px 1px rgba(58, 157, 200, 0.486);
+}
+
+.sab-mas:active{
+    transition: .1s linear;
+    background-color: #fff;
+    color: var(--preto);
+    border: var(--roxo-escuro) ;
+
+    transform: translateY(-0px);
+}
+
+.line{
+    width: 100vw;
+    height: 1px;
+    background-color: var(--roxo-claro);
+
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+section.container3{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    width: 40vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 8vh;
+}
+
+.title p:nth-child(1){
+    font-size: 4.5em;
+    color: var(--roxo-escuro);
+}
+
+.title p:nth-child(3){
+    font-size: 1.5em;
+    color: var(--branco);
+}
+
+.container-carrosel{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center; 
+    overflow: hidden;
+}
+
+.carrosel{
+    width: max-content;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    /* animation: moverCarrossel 5s linear infinite; */
+    scroll-behavior: smooth;
+
+
+    transition: transform 1s ease;  /* Transition suave para a animação de movimento */
+    will-change: transform; 
+    /* background-color: red; */
+}
+
+.jogo{
+    width: 30vw;
+    height: 95%;
+
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+
+    
+    /* background-color: yellow; Para visualização */
+    margin-right: 10px;  /* Espaço entre os itens */
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    
+}
+.jogo::before{
+    
+    content: "";
+    background-image: url(../img/gatinho1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
+    border-radius: 8px;
+}
+
+.jogo .conteudo{
+    color: var(--branco);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3vh;
+    margin-left: 5vh;
+
+}
+
+.conteudo p:nth-child(1){
+    font-size: 2em;
+    /* width: ; */
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+.conteudo div.hr2{
+    width: 10vw;
+    background-color: var(--roxo-escuro);
+    height: 2px;
+}
+.conteudo p:nth-child(3){
+    
+    margin-top: 3vh;
+}
+
+
+.jogo p.fora-contet{
+    color: var(--branco);
+    z-index: 2;
+    
+    margin-top: 10vh;
+    margin-left: 5vh;
+    width: 20vw;
+
+    font-size: 1.3em;
+
+    font-weight: light;
+}
+
+.roleta{
+    margin-top: 4vh;
+    width: 10vw;
+    height: 6vh;
+    background-color: red;
+}
+.cad-play-btn{
+    background-color: var(--preto);
+    color: var(--branco);
+    border: 5px solid var(--roxo-claro);
+    border-radius: 8px;
+    width: 32vw;
+    height: 10vh;
+
+    font-size: 1.7em;
+
+    font-family: 'Comfortaa', sans-serif;
+    transition: .2s linear;
+    color: var(--branco);
+
+    margin: 3vw;
+}
+.cad-play-btn:hover{
+    color: var(--preto);
+    background-color: var(--roxo-claro);
+    transform: translateY(-5px);
+    transition: .3s linear;
+    box-shadow: 1px 1px 29px 1px rgba(58, 157, 200, 0.486);
+}
+
+.cad-play-btn:active{
+    transition: .1s linear;
+    background-color: #fff;
+    color: var(--preto);
+    border: var(--roxo-escuro) ;
+
+    transform: translateY(-0px);
+}

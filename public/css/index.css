@@ -1,0 +1,234 @@
+:root{
+    --branco: #fff;
+    --roxo-claro: #B175EF;
+    --roxo-escuro: #571088;
+    --preto: #010103;
+}
+
+
+@keyframes flutuar{
+    0%{ transform: translateY(0)}
+    50%{transform: translateY(10px);}
+    100% {transform: translateY(0)}
+}
+
+@keyframes aparacer{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes moverCarrossel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+*{margin: 0;padding: 0;}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    overflow-x: hidden;
+    position: relative;
+
+    
+    transition: .2s linear;
+}
+
+button{
+    cursor: pointer;
+}
+header{
+    width: 90%;
+    height: 10vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width: 8vw;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+header a{
+    background-image: url(../img/home-icon.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+
+main{
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer{
+    width: 100vw;
+    height: 20vh;
+    color: var(--branco);
+    background-color: rgb(40, 40, 40);
+
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aparecer{
+    animation: aparecer 1s linear ;
+}
+
+/* login vitor  */
+
+.login .close{
+    width: 5vh;
+    height: 5vh;
+    position: fixed;
+    color:  white;
+    z-index: 31;
+
+    font-size: 4em;
+    left: 2%;
+    top: 6%;
+
+    cursor: pointer;
+}
+
+.login .formu{
+    width: 50%;
+    height: 70vh;
+    position: fixed;
+    background: white; 
+    z-index: 31;
+
+    left: 0%;
+    top: 0%;
+    transform: translate(50%, 23%);
+
+    border-radius: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login .formu .text{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    /* background: blue; */
+}
+.login .formu .text p{
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.login .formu form{
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:  column;
+}
+
+.login .formu form .inp{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction:  column;
+
+
+    
+    /* background: gray;    */
+    padding: 1.5%;
+}
+
+.login .formu form .inp ::placeholder{
+    color: black;
+}
+
+
+.login .formu form .inp input {
+    color: black;
+    padding-left: 5px;
+}
+
+
+.login .formu form .inp p{
+    font-size:  1.4em;  
+}
+
+.login .formu form .inp input, select{
+    width: 95vh;
+    height: 10vh;
+
+
+    border: 0;
+    background: #c9c9c9;
+    border-radius: 10px;
+}
+
+.login .formu form .btn{
+    width: 100%;
+    /* background-color: gold; */
+}
+
+.login .formu form .btn button{
+    width: 70vh;
+    height: 10vh;   
+    font-size: 2em;
+    background:none;
+
+    margin-top: 4%;
+    color: #B477F2;
+    border: 5px, #B477F2, solid;
+    border-radius: 10px;
+}
+
+.login .bg{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 30;
+
+    left: 0%;
+    top: 0%;
+}
+
+
