@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infonet</title>
+    <title>3º Infonet</title>
+    <link rel="shortcut icon" type="imagex/png" href="./img/cadeado.svg">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/pag-si.css">
     <style>
@@ -27,19 +28,19 @@
             <div class="container-topicos">
                 <div class="topicos" id="#topicos">
                     <p>Tópico 1</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat doloremque, tempora natus quam culpa dignissimos similique itaque sint reprehenderit animi quos in, iusto, ex nisi aliquam pariatur libero atque.</p>
+                    <p>Cibersegurança é o conjunto de práticas e tecnologias para proteger dados e sistemas contra ataques digitais. Isso inclui manter a confidencialidade, integridade e disponibilidade das informações, garantindo que só quem tem permissão possa acessá-las.</p>
                 </div>
                 <div class="topicos">
                     <p>Tópico 2</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat doloremque, tempora natus quam culpa dignissimos similique itaque sint reprehenderit animi quos in, iusto, ex nisi aliquam pariatur libero atque.</p>
+                    <p>Entre as ameaças mais comuns estão malware, ransomware, phishing e ataques DDoS. Elas podem roubar dados, sequestrar sistemas ou causar falhas graves. Conhecer essas ameaças é o primeiro passo para saber como enfrentá-las.</p>
                 </div>
                 <div class="topicos">
                     <p>Tópico 3 </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat doloremque, tempora natus quam culpa dignissimos similique itaque sint reprehenderit animi quos in, iusto, ex nisi aliquam pariatur libero atque.</p>
+                    <p>Adotar boas práticas é essencial: use senhas únicas, ative autenticação em duas etapas, evite redes Wi-Fi públicas sem proteção e desconfie de links e e-mails suspeitos. Pequenas atitudes fazem grande diferença para acessar os navegadores com plenitude.</p>
                 </div>
                 <div class="topicos">
                     <p>Tópico 4</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat doloremque, tempora natus quam culpa dignissimos similique itaque sint reprehenderit animi quos in, iusto, ex nisi aliquam pariatur libero atque.</p>
+                    <p>Phishing é uma técnica de engano onde criminosos se passam por empresas confiáveis para roubar seus dados, utilizando uma interface clonada. Isso pode vir por e-mails falsos, mensagens ou sites minuciosamente duplicados. Ficar atento é a melhor defesa!</p>
                 </div>
             </div>
         </section>
@@ -53,28 +54,33 @@
                         <img src="../img/cerebro.svg" alt="">
                         <div class="texto-dicas">
                             <p>Responsabilidade Virtual</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur laoreet dolor</p>
+                            <p>Tenha consciência do que você acessa e compartilha na internet. Evite clicar em links desconhecidos, desconfie de promoções milagrosas e não forneça informações pessoais em qualquer site.</p>
                         </div>
                     </div>
+                    <br><br><br>
+
                     <div class="dicas">
                         <img src="../img/escudo.svg" alt="">
                         <div class="texto-dicas">
                             <p>Softwares e Atualizações</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur laoreet dolor</p>
+                            <p>Manter sistemas, aplicativos, fornecedores VPN e antivírus atualizados é essencial; pois são corrigidas falhas de segurança que podem ser exploradas por invasores. Não deixe para depois!</p>
                         </div>
                     </div>
+                    <br><br><br>
+
                     <div class="dicas">
                         <img src="../img/mundo-cadeado.svg" alt="">
                         <div class="texto-dicas">
                             <p>Passes confiáveis</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur laoreet dolor</p>
+                            <p>Use senhas longas, misturando letras, números e símbolos, de acordo com a peculiaridade ideal. Evite usar a mesma senha em diferentes serviços e considere gerenciadores de senha para manter tudo seguro e organizado.</p>
                         </div>
                     </div>
                 </div>
                 <div class="gatito">
-                    <img src="../img/gatito.png" alt="gatito">
+                    <img src="../img/caveira.svg" alt="gatito">
                 </div>
             </section>
+            <br><br><br>
         </section>
         <div class="hr"></div>
 
@@ -87,11 +93,11 @@
             <div class="container-hash-tips">
                 <div class="hashs-tip">
                     <p>BYCRIPT</p>
-                    <p>Um algoritmo de senha usado para armazenar e verificar senhas de forma segura, conhecido por ser um método criptográfico robusto e adaptativo, resistente a ataques de força bruta.</p>
+                    <p>Um algorítmo de senha usado para armazenar e verificar senhas de forma segura, conhecido por ser um método criptográfico robusto e adaptativo, resistente a ataques de força bruta.</p>
                 </div>
                 <div class="hashs-tip">
                     <p>SHA-1</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p>Algorítmo de hash mais antigo, usado para verificar a integridade de dados. Embora já tenha sido popular, hoje ele é considerado vulnerável a ataques modernos e foi substituído por métodos mais seguros.</p>
                 </div>
                 
             </div>
@@ -100,7 +106,7 @@
                 <p>Gerador de Hash</p>
                 <section class="input-hash">
 
-                    <form action="" method="post">
+                    <form action="" method="post" id="tabel-hash">
 
                         <input class="hash" id="input_hash" type="text" name="nome"  placeholder="Digite um texto para ser criptografado..." size="30">
                         <button class="send-hash-btn">Enviar</button>
@@ -151,6 +157,6 @@
         </script>
     <%}%>
 
-    <script src="../js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

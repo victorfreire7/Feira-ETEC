@@ -145,7 +145,7 @@ div.hr{
 .dicas div.texto-dicas p{
     width: 100%;
     height: auto;
-    font-size: 1.5em;
+    font-size: 1.3em;
     /* margin-left:; */
     color: var(--branco);
 }
@@ -161,6 +161,7 @@ div.hr{
     align-items: center;
     justify-content: center;
     height: 100%;
+    margin-left: 2.5vw;
 }
 .container2 section div.gatito img{
     width: 100%;
@@ -338,11 +339,14 @@ input.hash:focus::placeholder{
 
 .tabela{
     margin-bottom: 10vh;
-    width: 50vw;
-    height: 45vh;
+    width: max-content;
+    min-width: 50vw;
+    min-height: 45vh;
+    height: max-content;
     border-radius: 15px;
     border: 2px solid white;
     background-color: var(--preto);
+
 
     box-shadow: 0px 0px 100px 1px #58108842;
 
@@ -369,6 +373,7 @@ input.hash:focus::placeholder{
 
 .tabela .linha .conteudo{
     margin-left: 5vh;
+    margin-right: 3vh;
 }
 
 .tabela .linha, .tabela{

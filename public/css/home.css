@@ -211,36 +211,39 @@ section.container3{
 }
 
 .container-carrosel{
-    width: 100vw;
+    width: 90vw;
     height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: center; 
     overflow: hidden;
 }
 
 .carrosel{
-    width: max-content;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
     height: 70vh;
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
-    /* animation: moverCarrossel 5s linear infinite; */
-    scroll-behavior: smooth;
+   
 
+    gap: 3vh;
 
-    transition: transform 1s ease;  /* Transition suave para a animação de movimento */
-    will-change: transform; 
     /* background-color: red; */
 }
 
+
 .jogo{
+    min-width: 30vw;
     width: 30vw;
-    height: 95%;
+    height: 100%;
 
     border-radius: 8px;
     position: relative;
     z-index: 1;
+    animation: moverCarrossel 13s linear infinite;
 
     
     /* background-color: yellow; Para visualização */
@@ -255,11 +258,11 @@ section.container3{
 .jogo::before{
     
     content: "";
-    background-image: url(../img/gatinho1.png);
+    background-image: var(--background-img); /* Usando a variável */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(40%);
+    filter: brightness(60%) blur(1px);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -310,7 +313,8 @@ section.container3{
     
     margin-top: 10vh;
     margin-left: 5vh;
-    width: 20vw;
+    width: 25vw;
+    height: max-content;
 
     font-size: 1.3em;
 
@@ -345,13 +349,14 @@ section.container3{
     transform: translateY(-5px);
     transition: .3s linear;
     box-shadow: 1px 1px 29px 1px rgba(58, 157, 200, 0.486);
+    cursor: pointer;
 }
+
 
 .cad-play-btn:active{
     transition: .1s linear;
     background-color: #fff;
     color: var(--preto);
     border: var(--roxo-escuro) ;
-
-    transform: translateY(-0px);
+    transform: translateY(0px);
 }

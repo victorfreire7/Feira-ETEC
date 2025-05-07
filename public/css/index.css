@@ -1,8 +1,19 @@
-:root{
+    :root{
     --branco: #fff;
     --roxo-claro: #B175EF;
     --roxo-escuro: #571088;
     --preto: #010103;
+}
+
+::-webkit-scrollbar {
+    background: none;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+
 }
 
 
@@ -18,8 +29,9 @@
 }
 
 @keyframes moverCarrossel {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% { transform: (0); }
+    85% { transform: translateX(-1180%); }
+    100% { transform: translateX(0); }
 }
 
 @font-face {
@@ -47,6 +59,7 @@ body {
 
     
     transition: .2s linear;
+    scroll-behavior: smooth;
 }
 
 button{
@@ -231,4 +244,168 @@ footer{
     top: 0%;
 }
 
+ /* Login Ryan */
 
+ #form-login{
+    position: fixed;
+    width: 25vw;
+    height: 60vh;
+    background-color: var(--branco);
+
+    z-index: 1000;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: none;
+    opacity: 1;
+
+    border: 1px solid var(--roxo-escuro);
+    border-radius: 8px;
+    z-index: 10;
+}
+
+#form-login form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    background-color:#000;
+
+    color: var(--roxo-escuro);
+    
+
+    border: 1px solid var(--roxo-escuro);
+    border-radius: 8px;
+}
+
+    form h3{
+        font-size: 2em;
+        margin-left: 5vw;
+        margin-top: 6vh;
+        margin-bottom: 4vh;
+    }
+
+form div{
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+
+form p{
+    margin-left: 3vw;
+    margin-bottom: 10px;
+}
+form input, form select{
+    width: 15vw;
+    height: 5vh;
+    background-color: #2725258f;
+    border: none;
+    border-bottom: 1px solid var(--roxo-claro);
+    text-align: left;
+    font-size: .8em;
+    color: var(--branco);
+    font-family: 'Comfortaa', sans-serif;
+    transition: .2s linear;
+
+    margin-left: 3vw;
+}
+form input:hover, form select:hover{
+    border: none;
+    border-bottom: 1px solid var(--roxo-claro);
+    transition: .3s linear;
+}
+form input:focus, form select:focus{
+    border: none;
+    border-bottom: 1px solid var(--roxo-claro);
+    outline: none;
+    transition: .3s linear;
+}
+form input:focus::placeholder, form select::placeholder-shown, form select::placeholder{
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: .3s linear;
+}
+/* form input:hover::placeholder{
+    opacity: 1;
+    transition: .2s linear;
+} */
+
+#send-cad-btn{
+    background-color: var(--preto);
+    color: var(--branco);
+    border: 2px solid var(--roxo-claro);
+    border-radius: 8px;
+    width: 8vw;
+    height: 6vh;
+
+    font-size: 1em;
+
+    font-family: 'Comfortaa', sans-serif;
+    transition: .2s linear;
+    color: var(--branco);
+
+    position: absolute;
+
+    right: 2vw;
+    bottom: 3vh;
+
+}
+#send-cad-btn:hover{
+    color: var(--preto);
+    background-color: var(--roxo-claro);
+    transform: translateY(-5px);
+    transition: .3s linear;
+    box-shadow: 0px 0px 10px 1px rgba(58, 157, 200, 0.226);
+}
+
+#send-cad-btn:active{
+    transition: .1s linear;
+    background-color: #fff;
+    color: var(--preto);
+    border: var(--roxo-escuro) ;
+
+    transform: translateY(-0px);
+}
+
+#close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border:none;
+    color: var(--roxo-escuro);
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0);
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+#close:hover{
+   color: #7116ad;
+    transition: .2s linear;
+}
+
+a.link_alt{
+    position: absolute;
+    left: 2vw;
+    bottom: 4vh;
+
+    color: var(--roxo-escuro);
+}
+
+.pretao{
+    width: 1000vw;
+    height: 1000vh;
+    filter: blur(3px) opacity(85%);
+    position: fixed;
+    z-index: 9;
+    background-color: rgb(0, 0, 0);
+    display: none;
+}

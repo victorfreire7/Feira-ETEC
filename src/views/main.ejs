@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./img/cadeado.svg">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/home.css">
-    <title>Infonet</title>
+    <title>3º Infonet</title>
 </head>
 <body>
     <header>
@@ -13,18 +14,17 @@
         <a href="/"></a>
     </header>
 
-    <section class="login" style="display: none;">
-        <div class="close" onclick="closeab()">X</div>
-        <div class="formu">
-            <div class="text"> <p> Cadastre-se para jogar </p></div>
-            <form action="" method="post">
-                <div class="inp1 inp">
-                    <p>Nome</p>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome:">
-                </div>
-                <div class="inp1 inp">
-                    <p>Turma</p>
-                    <select name="turma" id="turma">
+    <div class="pretao">aaaaaaa</div>
+
+    <div id="form-login">
+        <form method="post" action="">
+            <h3>Increva-se</h3>
+            <div>
+                <p>Nome</p>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome e sobrenome" maxlength="20" required>
+            </div>
+            <div>
+                <select name="turma" id="turma" required>
                         <option value="0">Selecionar Turma...</option>
                         <option value="info1">1º Infonet</option>
                         <option value="info2">2º Infonet</option>
@@ -42,21 +42,18 @@
                         <option value="el2">2º Eletrônica</option>
                         <option value="el3">3º Eletrônica</option>
                     </select>
-                </div>
-                <div class="btn">
-                    <button>Próximo</button>
-                </div>
-            </form>
-        </div>
-        <div class="bg"></div>
-    </section>
-
+            </div>
+            <button id="send-cad-btn" type="submit">Enviar</button>
+            <button id="close" onclick="close_login()" type="button">x</button>
+            <a href="/games" class="link_alt">Ja se inscreveu?</a>
+        </form>
+    </div>
 
     <main>
         <section class="container1">
             <div>
             <p>CYBER<br> <span style="color:#571088;">SEGURANÇA</span> </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Proteja seus dados na internet com segurança digital: descubra como navegar com confiança em um mundo cheio de ameaças digitais e mantenha sua privacidade</p>
             </div>
             <div>
                 <img src="img/cadeado.svg" alt="">
@@ -67,22 +64,22 @@
         <!-- <a href="/rant"> -->
 
         <section class="container-caixas">
-            <div class="caixa">
+            <div class="caixa" onclick="mudar_pag('/rant#topicos')">
                 <p>Introdução: <br> Conceitos</p>
                 <div class="hr"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, non ducimus dolore ipsum vitae officia, alias saepe architecto impedit nam, aut dolores illo eos excepturi aperiam. Recusandae maxime quos labore.</p>
+                <p>Conheça os conceitos básicos da defesa cibernética: Entenda ameaças comuns, como o phishing e malware, e siga dicas simples de proteção, como utilizar senhas fortes e manter seus sistemas sempre atualizados.</p>
                 <span id="sybom-plus">+</span>
             </div>
-            <div class="caixa" >
+            <div class="caixa" onclick="mudar_pag('/rant#hash')" >
                 <p>Hash na <br> Prática</p>
                 <div class="hr"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, non ducimus dolore ipsum vitae officia, alias saepe architecto impedit nam, aut dolores illo eos excepturi aperiam. Recusandae maxime quos labore.</p>
+                <p>Explore como o hash mantém suas senhas seguras. Abordaremos o SHA-1, um método mais antigo, e o BCRYPT, um algoritmo moderno e forte, demonstrando como eles dificultam a vida dos crackers.</p>
                 <span id="sybom-plus">+</span>
             </div>
-            <div class="caixa" >
+            <div class="caixa" onclick="mudar_pag('/rant#protecao')" >
                 <p>Como se <br> Proteger?</p>
                 <div class="hr"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, non ducimus dolore ipsum vitae officia, alias saepe architecto impedit nam, aut dolores illo eos excepturi aperiam. Recusandae maxime quos labore.</p>
+                <p>Aprenda hábitos seguros para a vida online: seja digitalmente responsável, crie senhas fortes e mantenha sistemas e programas atualizados. Assim você fica protegido contra invasões e golpes online.</p>
                 <span id="sybom-plus">+</span>
             </div>
         </section>
@@ -115,7 +112,7 @@
             </div>
         </div>
 
-        <button class="cad-play-btn" onclick="abrir_login()">Cadastre-se para jogar</button>
+        <button class="cad-play-btn" onclick="open_login()">Cadastre-se para jogar</button>
         
     </section>
 
@@ -124,31 +121,11 @@
     <footer>
         © Copyright 2025 Terceiro Infonet | Todos os direitos reservados
     </footer>
-
     <script src="js/script.js"></script>
+    <!-- <script src="js/login.js"></script -->
     <script>
 
-        document.addEventListener('DOMContentLoaded', () => {
-      const carrossel = document.getElementById('carrosel');
-    
-      // Duplicar os itens para criar o loop
-      carrossel.innerHTML += carrossel.innerHTML;
-    
-      let posX = 0;
-      const speed = 2; // Ajuste: menor = mais lento
-    
-      function loop() {
-        posX -= speed;
-        if (Math.abs(posX) >= carrossel.scrollWidth / 2) {
-          posX = 0; // Reinicia quando chegar na metade
-        }
-        carrossel.style.transform = `translateX(${posX}px)`;
-        requestAnimationFrame(loop);
-      }
-    
-      loop();
-    });
-    
+
         </script>
 </body>
 

@@ -21,7 +21,7 @@ async function geraHash(req, res){
         bcrypt: bcryptInp,
         sha1: sha1Inp,
     });
-    res.redirect("/rant");
+    res.redirect("/rant#tabel-hash");
     
 }
 module.exports = { main, geraHash }
