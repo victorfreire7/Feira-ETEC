@@ -23,6 +23,8 @@ Está é um projeto feita exclusivamente para uma feira anual da ETEC Professor 
 
 -  Após a criação do arquivo, atribuir as variáveis de acordo com os respectivos: Nome, Usuário, Senha, Porta e Host do seu banco de dados MySQL. O banco de dados pode ser criado usando [MySQL Workbench 8.0 CE](https://dev.mysql.com/downloads/workbench/). -  Não se esqueça de ativar o seu banco de dados usando um Serviço semelhante ao Wamp ou UsbWebServer para ativar a sua port 3306 e, assim, relizar a conexão com ssua base de dados -.
 
+- Em seguida, criar um Schema no seu banco de dados nomeado com o "DB_NAME=" setado anteriomente.
+
 - Ao terminar de configurar o seu Banco de Dados, abrir o Terminal do seu clone deste repositório e digitar as seguintes informações:
 
 ``` bash
