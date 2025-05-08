@@ -292,7 +292,8 @@ section.container3{
 
 .conteudo p:nth-child(1){
     font-size: 2em;
-    /* width: ; */
+    max-width: 25vw;
+    width: max-content;
     margin-bottom: 3vh;
     margin-top: 3vh;
 }

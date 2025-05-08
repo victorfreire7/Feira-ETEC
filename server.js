@@ -2,7 +2,7 @@ const express = require('express');
 const routes = require('./routes');
 const db = require('./src/db'); // 127.0.0.1 ???
 const app = express();
-const PORT = 3005;
+const PORT = 3006;
 
 app.use(express.static('public')); //seto o diretorio inicial das páginas EJS como 'public', assim posso executar o 'js/main.js' mais facilmente.
 app.use(express.urlencoded({ extended: true }));
