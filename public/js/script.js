@@ -134,7 +134,7 @@ const jogos = [
     nome: "Fuja do Vírus",
     img: "../img/capi.jpg",
     descricao: "nao me mandaram ainda",
-    link: "https://10121974.github.io/Jogo-karatec/"
+    link: "https://victorfreire7.github.io/Fuja-dos-V-rus/"
   },
   {
     nome: "Shadow Leap",
