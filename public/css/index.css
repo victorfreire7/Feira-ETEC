@@ -30,7 +30,7 @@
 
 @keyframes moverCarrossel {
     0% { transform: (0); }
-    85% { transform: translateX(-1180%); }
+    85% { transform: translateX(-1380%); }
     100% { transform: translateX(0); }
 }
 

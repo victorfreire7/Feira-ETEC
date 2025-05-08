@@ -83,6 +83,12 @@ const jogos = [
     link: "https://darkboat4.github.io/Data-Spike/"
   },
   {
+    nome: "Karatec",
+    img: "../img/Tartaruga.png",
+    descricao: "nao me mandaram ainda",
+    link: "https://10121974.github.io/Jogo-karatec/"
+  },
+  {
     nome: "Nig Slayer",
     img: "../img/nig.jpeg",
     descricao: "Assuma o papel de Nig, um ninja cibernético, e enfrente o vírus Specter que ameaça destruir a internet. Lute em mundos digitais cheios de perigos, limpe os sistemas e salve o futuro da rede global!",
@@ -125,6 +131,12 @@ const jogos = [
     link: "https://fern990.github.io/jogo/"
   },
   {
+    nome: "Fuja do Vírus",
+    img: "../img/capi.jpg",
+    descricao: "nao me mandaram ainda",
+    link: "https://10121974.github.io/Jogo-karatec/"
+  },
+  {
     nome: "Shadow Leap",
     img: "../img/shadow.jpeg",
     descricao: "Um malware está atacando um computador, você é a única pessoa que consegue combater essa invasão.",
@@ -142,12 +154,14 @@ const jogos = [
     descricao: "nao me mandaram ainda",
     link: "https://darkboat4.github.io/kastiel-game-paulo-freire/"
   },
+  
   {
-    nome: "Karatec",
-    img: "../img/Tartaruga.png",
-    descricao: "nao me mandaram ainda",
-    link: "https://10121974.github.io/Jogo-karatec/"
+    nome: "Cyber Samurai",
+    img: "../img/samurai.jpg",
+    descricao: "No futuro, uma IA corrompida domina os dados da humanidade.",
+    link: "https://01naoe02.github.io/paulofreire/"
   },
+  
   // Você pode adicionar mais aqui!
 ];
 
