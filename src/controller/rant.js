@@ -8,6 +8,7 @@ let scrollTo = ''
 
 
 function main(req, res){
+    scrollTo = false;
     res.render("rant", { valor: n, bcrypt: bcryptInp, sha1: sha1Inp, scrollTo: scrollTo });
 }
 
