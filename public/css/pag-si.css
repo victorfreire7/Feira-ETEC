@@ -53,7 +53,7 @@ main{
     background-color: var(--preto);
     border: 3px solid var(--roxo-escuro);
     border-radius: 10px;
-    width: 35vw;
+    width: 40vw;
     height: 50vh;
 
     color: var(--branco);
@@ -68,13 +68,13 @@ main{
     margin-top: 5vh;
 }
 .topicos p:nth-child(1){
-    width: 9vw;
+    width: 25vw;
     font-size: 1.4em;
     border-bottom: 3px solid var(--roxo-escuro);
     padding-bottom: 10px;
 }
 .topicos p:nth-child(2){
-    width: 70%;
+    width: 80%;
     height: auto;
     font-size: 1.1em;
 }
@@ -161,13 +161,14 @@ div.hr{
     align-items: center;
     justify-content: center;
     height: 100%;
-    margin-left: 2.5vw;
+    margin-left: 4vw;
 }
 .container2 section div.gatito img{
     width: 100%;
     height: auto;
     object-position: center;
     object-fit: contain;
+    animation: 3s linear infinite flutuar;
 }
 
 .container3{

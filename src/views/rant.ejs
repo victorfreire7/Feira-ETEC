@@ -22,24 +22,24 @@
         <a href="/"></a>
     </header>
     <main>
-        <section class="container1">
+        <section class="container1" id="topicos">
             <p class="title">Introdução</p>
             <p class="title">Conceitos básicos sobre cyber segurança</p>
             <div class="container-topicos">
                 <div class="topicos" id="#topicos">
-                    <p>Tópico 1</p>
+                    <p>O que é Cibersegurança?</p>
                     <p>Cibersegurança é o conjunto de práticas e tecnologias para proteger dados e sistemas contra ataques digitais. Isso inclui manter a confidencialidade, integridade e disponibilidade das informações, garantindo que só quem tem permissão possa acessá-las.</p>
                 </div>
                 <div class="topicos">
-                    <p>Tópico 2</p>
+                    <p>Principais Ameaças</p>
                     <p>Entre as ameaças mais comuns estão malware, ransomware, phishing e ataques DDoS. Elas podem roubar dados, sequestrar sistemas ou causar falhas graves. Conhecer essas ameaças é o primeiro passo para saber como enfrentá-las.</p>
                 </div>
                 <div class="topicos">
-                    <p>Tópico 3 </p>
+                    <p>Práticas de Segurança</p>
                     <p>Adotar boas práticas é essencial: use senhas únicas, ative autenticação em duas etapas, evite redes Wi-Fi públicas sem proteção e desconfie de links e e-mails suspeitos. Pequenas atitudes fazem grande diferença para acessar os navegadores com plenitude.</p>
                 </div>
                 <div class="topicos">
-                    <p>Tópico 4</p>
+                    <p>Phishing</p>
                     <p>Phishing é uma técnica de engano onde criminosos se passam por empresas confiáveis para roubar seus dados, utilizando uma interface clonada. Isso pode vir por e-mails falsos, mensagens ou sites minuciosamente duplicados. Ficar atento é a melhor defesa!</p>
                 </div>
             </div>
@@ -108,7 +108,7 @@
 
                     <form action="" method="post" id="tabel-hash">
 
-                        <input class="hash" id="input_hash" type="text" name="nome"  placeholder="Digite um texto para ser criptografado..." size="30"  maxlength="20" required>
+                        <input class="hash" id="input_hash" type="text" name="nome"  placeholder="Digite um texto para ser criptografado..." size="30">
                         <button class="send-hash-btn">Enviar</button>
                 
                     </form>
@@ -154,12 +154,6 @@
     <%if(scrollTo){%>
         <script>
             window.scrollTo(0, 2400)
-        </script>
-    <%}%>
-
-    <%if(!scrollTo){%>
-        <script>
-            window.scrollTo(0, 0)
         </script>
     <%}%>
 

@@ -198,6 +198,7 @@ footer{
 .login .formu form .inp input {
     color: black;
     padding-left: 5px;
+    
 }
 
 
@@ -206,7 +207,7 @@ footer{
 }
 
 .login .formu form .inp input, select{
-    width: 95vh;
+    width: 95vw;
     height: 10vh;
 
 
@@ -221,7 +222,7 @@ footer{
 }
 
 .login .formu form .btn button{
-    width: 70vh;
+    width: 70vw;
     height: 10vh;   
     font-size: 2em;
     background:none;
@@ -301,7 +302,7 @@ form p{
     margin-bottom: 10px;
 }
 form input, form select{
-    width: 15vw;
+    width: 16vw;
     height: 5vh;
     background-color: #2725258f;
     border: none;
