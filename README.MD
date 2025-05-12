@@ -1,11 +1,16 @@
-## Projeto Feira Paulo Freire.
-
+# Projeto Feira Paulo Freire.
 Está é um projeto feita exclusivamente para uma feira anual da ETEC Professor Adhemar Batista Heméritas. Este servidor WEB tem como objetivo informativo de falar sobre cybersegurança. No fim do site, há jogos criados por todos os alunos do Terceiro Ano do ensino médio técnico profissional em Informática para Internet do ano de 2025.
 
+<img src="./public/img/README/3.png">
+
+
+
+
 ---
+<br>
 
 
-### Modo de iniciação:
+## Modo de iniciação:
 
 - Após criar um clone deste repositório, dentro da pasta do mesmo, criar um arquivo '[.env](https://www.npmjs.com/package/dotenv)'.
 
